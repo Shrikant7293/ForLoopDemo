@@ -1,4 +1,4 @@
-﻿
+﻿using ForLoopDemo;
 using System.Globalization;
 
 public class program
@@ -7,7 +7,14 @@ public class program
 	public static void Main()
 	{
 		//PrintNumber();
-		NestedLoop();
+		//NestedLoop();
+		//StarPrint.Pattern1();
+		//StarPrint.Pattern2();
+		//StarPrint.Pattern3();
+		//StarPrint.Pattern4();
+		//StarPrint.Pattern5();
+		//StarPrint.Pattern6();
+		StarPrint.Pattern7();
 	}
 
 	public static void PrintNumber()

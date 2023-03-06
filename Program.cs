@@ -14,7 +14,12 @@ public class program
 		//StarPrint.Pattern4();
 		//StarPrint.Pattern5();
 		//StarPrint.Pattern6();
-		StarPrint.Pattern7();
+		//StarPrint.Pattern7();
+
+		StarPrint.Static1();                   // Static Function Call From Starprint Class
+
+		StarPrint starPrint3 = new StarPrint(); // Nonstatic Function Call From Starprint Class
+		starPrint3.Nonstatic1();
 	}
 
 	public static void PrintNumber()

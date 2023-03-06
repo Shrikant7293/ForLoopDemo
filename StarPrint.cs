@@ -10,6 +10,43 @@ namespace ForLoopDemo
 {
 	internal class StarPrint
 	{
+		public void Nonstatic()
+		{
+			Static(); // Static To Nonstatic
+			Nonstatic1();  // Nonstatic To Nonstatic
+		}
+
+		public static void Static()
+		{
+			StarPrint starPrint = new StarPrint();
+			starPrint.Nonstatic();                 // Nonstatic To Static        
+
+			Static1();                             // Static To Static
+		
+		}
+
+		public void Nonstatic1()
+		{
+			Console.WriteLine("HELLO I AM NONSTATIC1 FUNCTION");
+		}
+
+		public static void Static1()
+		{
+			StarPrint starPrint1 = new StarPrint();
+			starPrint1.Nonstatic();                   // Nonstatic To Static1
+
+			Static();                                // Static To Static1
+
+			StarPrint starPrint2 = new StarPrint();
+			starPrint2.Nonstatic1();                  // Nonstatic1 To Static1
+		}
+
+
+
+
+
+		// Print Character Star *
+
 		public static void Pattern1()
 		{
 			Console.WriteLine("Enter Number Of Rows");
@@ -32,6 +69,8 @@ namespace ForLoopDemo
 			}
 		}
 
+		// Print Character ABCD,ABCD,.....,ABCD
+
 		public static void Pattern2()
 		{
 			Console.WriteLine("Enter Number Of Rows");
@@ -49,6 +88,8 @@ namespace ForLoopDemo
 				Console.WriteLine();
 			}
 		}
+
+		// Print Character AAAAA,BBBBB,......,DDDDD
 
 		public static void Pattern3()
 		{
@@ -68,6 +109,8 @@ namespace ForLoopDemo
 			}
 		}
 
+		// Print Reverse Character DCBA,DCBA,......,DCBA
+
 		public static void Pattern4()
 		{
 			Console.WriteLine("Enter Number Of Rows");
@@ -86,6 +129,8 @@ namespace ForLoopDemo
 			}
 		}
 
+		// Print Reverse Character DDDD,CCCC,....,AAAA
+
 		public static void Pattern5()
 		{
 			Console.WriteLine("Enter Number Between 1 To 26");
@@ -103,6 +148,8 @@ namespace ForLoopDemo
 				Console.WriteLine() ;
 			}
 		}
+
+		// Print Number 123,.....,10
 
 		public static void Pattern6()
 		{
@@ -126,6 +173,8 @@ namespace ForLoopDemo
 			
 
 		}
+
+		// Print Character ABCD,......,GHIJ
 
 		public static void Pattern7()
 		{

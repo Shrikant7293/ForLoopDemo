@@ -6,6 +6,19 @@ public class program
 
 	public static void Main()
 	{
+		// Starpattern Updated
+
+		StarPrint.StarPrint2();
+
+
+
+
+
+
+
+
+		// StarPattern Previous
+
 		//PrintNumber();
 		//NestedLoop();
 		//StarPrint.Pattern1();
@@ -16,10 +29,15 @@ public class program
 		//StarPrint.Pattern6();
 		//StarPrint.Pattern7();
 
-		StarPrint.Static1();                   // Static Function Call From Starprint Class
+		// Static Nonstatic Function
 
-		StarPrint starPrint3 = new StarPrint(); // Nonstatic Function Call From Starprint Class
-		starPrint3.Nonstatic1();
+		//StarPrint.Static1();                    // Static Function Call From Starprint Class
+
+		//StarPrint starPrint3 = new StarPrint(); // Nonstatic Function Call From Starprint Class
+		//starPrint3.Nonstatic1();
+
+		//StarPrint starPrint4 = new StarPrint();
+		//starPrint4.Nonstatic();                  // Nonstatic Function Call From Starprint Class
 	}
 
 	public static void PrintNumber()

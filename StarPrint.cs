@@ -10,19 +10,77 @@ namespace ForLoopDemo
 {
 	internal class StarPrint
 	{
+
+		// StarPrint Print Updated
+		public int num { get; set; }
+
+		private void GetNumberFromUser()
+		{
+			Console.WriteLine("Enter Any Number");
+			num = Convert.ToInt32(Console.ReadLine());
+		}
+
+		public void StarPattern()
+		{
+			GetNumberFromUser();
+
+			for (int i =1 ; i <= num; i++)
+			{
+				for (int j = 1; j <= i;j++)
+				{
+					Console.Write("*");
+				}
+				Console.WriteLine();
+			}
+		}
+
+		public static void StarPrint2()
+		{
+			//StarPrint starPrint = new StarPrint();
+			//starPrint.StarPattern();
+
+			StarPrint3();
+		}
+
+		public int num2 { get; set; }
+
+		public void GetNumberFromUser2()
+		{	
+			Console.WriteLine("Enter Any Number");
+			num2 = Convert.ToInt32(Console.ReadLine());
+		}
+
+		public static void StarPrint3()
+		{
+			StarPrint starPrint=new StarPrint();
+			starPrint.GetNumberFromUser2();
+
+			for (int i = starPrint.num2; i >= 1; i--)
+			{
+				for(int j=1; j<=i; j++)
+				{
+					Console.Write("*");
+				}
+				Console.WriteLine();
+			}
+		}
+
+
+		// Static And NonStatic Function
+
 		public void Nonstatic()
 		{
-			Static(); // Static To Nonstatic
-			Nonstatic1();  // Nonstatic To Nonstatic
+			Static();       // Call Function Static To Nonstatic
+			Nonstatic1();  // Call Function Nonstatic To Nonstatic
 		}
 
 		public static void Static()
 		{
 			StarPrint starPrint = new StarPrint();
-			starPrint.Nonstatic();                 // Nonstatic To Static        
+			starPrint.Nonstatic();                 // Call Function Nonstatic To Static        
 
-			Static1();                             // Static To Static
-		
+			Static1();                             // Call Function Static To Static
+
 		}
 
 		public void Nonstatic1()
@@ -33,12 +91,12 @@ namespace ForLoopDemo
 		public static void Static1()
 		{
 			StarPrint starPrint1 = new StarPrint();
-			starPrint1.Nonstatic();                   // Nonstatic To Static1
+			starPrint1.Nonstatic();                   // Call Function Nonstatic To Static1
 
-			Static();                                // Static To Static1
+			Static();                                 // Call Function Static To Static1
 
 			StarPrint starPrint2 = new StarPrint();
-			starPrint2.Nonstatic1();                  // Nonstatic1 To Static1
+			starPrint2.Nonstatic1();                  // Call Function Nonstatic1 To Static1
 		}
 
 
